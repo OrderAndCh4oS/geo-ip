@@ -12,6 +12,7 @@ require( 'Location.php' );
 </head>
 <body>
 <?php
+$json = new Location('8.8.8.8');
 $location = $json->getJson();
 echo "<ul>";
 echo "<li>Country Code: ".$location->country_code . "</li>";
